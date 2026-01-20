@@ -24,7 +24,7 @@ L'objectif est de mettre en place une infrastructure de type "Cloud Privé" haut
 - **Réseau :** Box Internet standard (DHCP), câblage Ethernet RJ45
 - **Stockage :** SSD et HDD locaux sur chaque noeud (Possible Cluster storage via Longhorn)
 
-
+---
 
 ## 3. Architecture Physique (Hardware & Connectivité)
 
@@ -40,6 +40,8 @@ Le cluster est organisé en "maillage" via le switch de la box internet.
 (PVE-01)      (PVE-02)      (PVE-03)
  16 Go RAM     16 Go RAM     12 Go RAM
 ```
+
+---
 
 ## 4. Architecture Logique (Software Stack)
 
@@ -57,6 +59,8 @@ L'infrastructure est découpée en couches logiques pour assurer la séparation 
   - **MetalLB 	:** Gère un pool d'IPs locales pour exposer les services 	(LoadBalancer).
 - **Stockage :** * **Longhorn :** Système de stockage distribué qui réplique les données des volumes sur les 3 VM.
 
+---
+
 ## 5. La Stack Logicielle devOps (Services Cibles)
 
 | **Catégorie**      | Outil recommandé | Rôle                                            |
@@ -67,6 +71,8 @@ L'infrastructure est découpée en couches logiques pour assurer la séparation 
 | **Sécurité**       | **Vaultwarden**  | Gestionnaire de mots de passe                   |
 | **Réseau/DNS**     | **AdGuard Home** | Filtrge DNS et blocage de publicités            |
 | **Ingress**        | **Traefik**      | Reverse-proxy natif K3s avec gestion SSL        |
+
+---
 
 ## 6. Schéma de Flux (Logique de Requête)
 
