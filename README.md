@@ -36,7 +36,7 @@ Le cluster est organisé en "maillage" via le switch de la box internet.
                   │
     ┌─────────────┼─────────────┐
     ▼             ▼             ▼
-[ HP 715q ]   [ HP 715q ]   [ HP 710q ]
+[ Tiny 715q ]   [ Tiny 715q ]   [ Tiny 710q ]
 (PVE-01)      (PVE-02)      (PVE-03)
  16 Go RAM     16 Go RAM     12 Go RAM
 ```
