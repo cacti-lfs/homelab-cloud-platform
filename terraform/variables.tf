@@ -9,3 +9,8 @@ variable "endpoint_proxmox" {
     type = string
     sensitive = false
 }
+
+variable "user_ssh" {
+    type = string
+    sensitive = false
+}
