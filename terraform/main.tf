@@ -15,10 +15,10 @@ provider "proxmox" {
     pm_tls_insecure = true
 }
 
-resource "proxmox_vm_qemu" "vm_ubuntu" {
+resource "proxmox_vm_qemu" "prd-pve-k3s-m01" {
     # Nom de la VM
-    name = "01-SRV-UBU-24.04.5"
-    vmid = 200
+    name = "prd-pve-k3s-m01"
+    vmid = 201
     target_node = "node1"
     
     # Nom du template exact du template Proxmox
